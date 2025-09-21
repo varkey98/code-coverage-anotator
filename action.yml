@@ -6,8 +6,13 @@ inputs:
     description: "Path to LCOV file"
     required: true
     default: "coverage_filtered.info"
+  github-token:
+    description: "GitHub token for authentication"
+    required: true
 runs:
   using: "docker"
   image: "Dockerfile"
+  env:
+    GITHUB_TOKEN: ${{ inputs.github-token }}
   args:
     - ${{ inputs.lcov-file }}
