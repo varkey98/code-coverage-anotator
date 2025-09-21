@@ -9,4 +9,4 @@ FROM mcr.microsoft.com/dotnet/runtime:10.0
 WORKDIR /app
 COPY --from=build /out .
 
-ENTRYPOINT ["dotnet", "Code.Coverage.Anotator.dll"]
+ENTRYPOINT ["dotnet", "/app/Code.Coverage.Anotator.dll"]
