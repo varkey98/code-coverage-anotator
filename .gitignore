@@ -1,0 +1,5 @@
+coverage_filtered.info
+_coverage_report.dat
+
+bin/
+obj/

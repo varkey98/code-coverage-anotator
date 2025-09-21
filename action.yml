@@ -1,0 +1,11 @@
+name: "Code Coverage Annotator"
+description: "Parse LCOV and add inline GitHub PR annotations for uncovered lines"
+author: "You"
+inputs:
+  lcov-file:
+    description: "Path to LCOV file"
+    required: true
+    default: "coverage_filtered.info"
+runs:
+  using: "docker"
+  image: "Dockerfile"
