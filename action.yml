@@ -1,6 +1,6 @@
 name: "Code Coverage Annotator"
 description: "Parse LCOV and add inline GitHub PR annotations for uncovered lines"
-author: "You"
+author: "@varkey98"
 inputs:
   lcov-file:
     description: "Path to LCOV file"
